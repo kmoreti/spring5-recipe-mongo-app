@@ -5,6 +5,7 @@ import moreti.springframework.spring5recipeapp.domain.Recipe;
 import moreti.springframework.spring5recipeapp.exceptions.NotFoundException;
 import moreti.springframework.spring5recipeapp.services.RecipeService;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
@@ -132,6 +133,7 @@ public class RecipeControllerTest {
                 .andExpect(view().name("404error"));
     }
 
+    @Ignore
     @Test
     public void testGetRecipeNumberFormatException() throws Exception {
         when(recipeService.findById(anyString())).thenThrow(NotFoundException.class);

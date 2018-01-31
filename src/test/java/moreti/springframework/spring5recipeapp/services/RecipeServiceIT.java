@@ -36,7 +36,7 @@ public class RecipeServiceIT {
     @Autowired
     UnitOfMeasureToUnitOfMeasureCommand unitOfMeasureToUnitOfMeasureCommand;
 
-    @Transactional
+
     @Test
     public void testSaveOfDescription() throws Exception {
         //given
